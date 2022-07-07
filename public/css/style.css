@@ -1,0 +1,59 @@
+* {
+    font-family: Helvetica;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form {
+    width: 450px;
+    margin: 0 auto;
+  }
+  
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    margin-bottom: .3em;
+  }
+  
+  .form-control input {
+    padding: 5px;
+  }
+  .bt{
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*cadastrados*/
+  .nome-container {
+    width: 450px;
+    margin: 0 auto;
+  } 
+  
+.books-container div {
+  border-bottom: 1px solid #CCC;
+  padding: 5px;
+  margin: 5px;
+} 
+  
+.bold {
+  font-weight: bold;
+}
+.name{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.bt_voltar{
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}

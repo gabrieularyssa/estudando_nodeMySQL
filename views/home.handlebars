@@ -1,12 +1,16 @@
 <h1>Cadastra-se</h1>
 <form action="/books/insertbook" method="POST" class="form">
     <div class="form-control">
-        <label for="title">Título:</label>
+        <label for="title">Nome:</label>
         <input type="text" name="title" placeholder="Escreva seu nome">
     </div>
     <div class="form-control">
         <label for="idade">Idade :</label>
         <input type="number" name="idade" placeholder="Escreva sua idade">
     </div>
-    <input type="submit" value="Cadastrar">
+    <div class="bt">
+        <input type="submit" value="Cadastrar"><br />
+        <a href="http://localhost:3000/inserido">Clique aqui para ver os nomes inseridos</a>
+    </div>
+    
 </form>

@@ -6,7 +6,7 @@ const port = 3000
 const app = express()
 //configurando o express para resgatar dados do body
 app.use(
-    express.urlencoded({
+    express.urlencoded({ 
         extended: true
     })
 )
@@ -40,7 +40,18 @@ app.post('/books/insertbook', (req, res) => {
         res.redirect('/')
     })
 })
+//rota get para pegar dados do banco de dados
+app.get('/inserido', (req, res)=>{
+    const sql2 = "SELECT * FROM new_table"
 
+    conn.query(sql2, function(err, data){
+        if(err){
+            console.log(err)
+        }
+        const nomes = data
+        res.render('cadastros', { nomes })
+    })
+})
 //conectando ao mysql
 const conn = mysql.createConnection({
     host: 'localhost',

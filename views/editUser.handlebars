@@ -1,0 +1,14 @@
+<h1>Cadastre o seu livro:</h1>
+
+<form class="form" action="/cadastro/atualizarcadastro" method="POST">
+  <input type="hidden" name="id" value="{{user.id}}">
+  <div class="form-control">
+    <label for="title">Nome:</label>
+    <input type="text" name="nome" placeholder="Título do livro" value="{{user.nome}}">
+  </div>
+  <div class="form-control">
+    <label for="pageqty">Idade:</label>
+    <input type="number" name="idade" placeholder="Quantas páginas o livro tem?" value="{{user.idade}}">
+  </div>
+  <input type="submit" value="Editar">
+</form>

@@ -2,10 +2,13 @@
 <div class="nome-container">
   {{#each nomes}}
     <section class="name">
-      # {{this.id}} - <span class="bold">{{this.nome}}</span>  idade {{this.idade}}
+      # {{this.id}} - <span class="bold"><a href="/cadastro/{{this.id}}">{{this.nome}}</a></span>  idade {{this.idade}}
     </section>
   {{/each}}
   <section class="bt_voltar">
     <a href="http://localhost:3000" class="voltar">Volte para a tela de cadastro!</a>
   </section>
+  <form action="/cadastro/removertudo" method="POST">
+        <input type="submit" value="Limpar TUDO">
+      </form>
 </div>

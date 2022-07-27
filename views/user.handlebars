@@ -1,0 +1,13 @@
+<div id="book-page">
+  <a href="/cadastro">Voltar</a>
+  <div class="container">
+    <h1>Usuário: {{user.nome}}, possui {{user.idade}} anos. </h1>
+    <p>encontrado pelo ID:{{user.id}}</p>
+    <div class="actions">
+      <a href="/cadastro/edit/{{user.id}}">Editar</a>
+      <form action="/cadastro/remover/{{user.id}}" method="POST">
+        <input type="submit" value="Remover">
+      </form>
+    </div>
+  </div>
+</div>
